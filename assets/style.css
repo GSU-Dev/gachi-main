@@ -78,6 +78,40 @@ html, body {
     font-size: 3em;
 }
 
+.projcts {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.projcts .project {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--background-primary);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projcts .project h4 {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.projcts .project a {
+    padding: 10px 15px;
+    background-color: var(--primary);
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all .3s ease-in-out;
+}
+
+.projcts .project a:hover {
+    background-color: var(--primary-hover);
+}
+
 .features {
     width: 100vw;
 }
