@@ -3,8 +3,8 @@
 :root {
     --font-color: white;
     --background-primary: #333;
-    --primary: #bd9100;
-    --primary-hover: #bd91008f;
+    --primary: #ac6a52;
+    --primary-hover: #ac6a528f;
 }
 
 * {
@@ -153,4 +153,28 @@ html, body {
 
 .flip {
     transform: rotate(180deg);
+}
+
+@media (max-width: 700px) {
+    .first h1, .features .container h1, .projects .container h1, .contact .container h1 {
+        font-size: 2em;
+    }
+}
+
+@media (max-width: 520px) {
+    .projcts {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 470px) {
+    .first h1, .features .container h1, .projects .container h1, .contact .container h1 {
+        font-size: 1.5em;
+    }
+
+    .first ul {
+        align-items: center;
+        flex-direction: column;
+        gap: 30px;
+    }
 }
